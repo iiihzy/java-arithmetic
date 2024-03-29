@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class LetterCombinations {
 
     public static List<String> letterCombinations(String digits){
-        
+        return null;
     }
 
     public static void main(String[] args) {
