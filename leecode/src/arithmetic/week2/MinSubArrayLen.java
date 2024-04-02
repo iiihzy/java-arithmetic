@@ -15,7 +15,7 @@ public class MinSubArrayLen {
 
         int left = 0;
         int right = 1;
-        int minDistance = 9999;
+        int minDistance = 999999;
 
         int value = nums[left] + nums[right];
         while(right < nums.length) {
@@ -35,7 +35,7 @@ public class MinSubArrayLen {
 
 
         }
-        return minDistance == 9999? 0 : minDistance;
+        return minDistance == 999999? 0 : minDistance;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
