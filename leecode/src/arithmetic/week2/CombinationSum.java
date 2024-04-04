@@ -29,13 +29,15 @@ public class CombinationSum {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Integer> list = new ArrayList<>();
-        while(sc.hasNext()){
+        while(sc.hasNextInt()){
             list.add(sc.nextInt());
         }
-        
+
+        sc.next();
         int target = sc.nextInt();
         int[] nums = list.stream().mapToInt(Integer::intValue).toArray();
         CombinationSum combinationSum = new CombinationSum();
         List<List<Integer>> lists = combinationSum.combinationSum(nums, target);
+        System.out.println(lists);
     }
 }
