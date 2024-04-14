@@ -12,6 +12,7 @@ public class MinimumTotal {
                 dp[j] = Math.min(dp[j], dp[j + 1]) + triangle.get(i).get(j);
         }
         return dp[0];
+
     }
 
 
